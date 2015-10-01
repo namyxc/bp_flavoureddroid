@@ -17,6 +17,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    productFlavors{
+        orange {
+            applicationId = "com.namyxc.flavoureddroid.orange"
+            resValue "string", "app_name", "Orange"
+        }
+        banana {
+            applicationId = "com.namyxc.flavoureddroid.banana"
+            resValue "string", "app_name", "Banana"
+        }
+    }
 }
 
 dependencies {
